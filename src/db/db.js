@@ -5,7 +5,8 @@ import { database, username, password, host, dialect} from '../helpers/helper.js
 
 export const db = new Sequelize(database, username, password, {
     host,
-    dialect
+    dialect,
+    port: 6040
   })
 
 
